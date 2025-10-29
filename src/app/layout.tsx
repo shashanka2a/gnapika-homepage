@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   description: "Create lasting memories with personalized wooden gifts. Handcrafted with love, designed to tell your unique story.",
   keywords: ["wooden gifts", "personalized", "handcrafted", "custom", "memories", "wood engraving"],
   authors: [{ name: "Gnapika" }],
+  icons: {
+    icon: "/Gnapika-icon.jpeg",
+    apple: "/Gnapika-icon.jpeg",
+    shortcut: "/Gnapika-icon.jpeg",
+  },
   openGraph: {
     title: "Gnapika - Personalized Wooden Gifts",
     description: "Create lasting memories with personalized wooden gifts. Handcrafted with love, designed to tell your unique story.",

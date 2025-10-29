@@ -1,6 +1,7 @@
 "use client";
 
 import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Footer() {
   return (
@@ -143,6 +144,15 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div className="flex items-center gap-3">
+              <ImageWithFallback
+                src="/Gnapika-logo.jpeg"
+                alt="Gnapika logo"
+                width={120}
+                height={36}
+                className="h-7 w-auto"
+              />
+            </div>
             <p
               className="text-sm sm:text-base"
               style={{

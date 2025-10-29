@@ -6,32 +6,38 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 const products = [
   {
     id: 1,
-    name: "Photo Frames",
-    image: "https://images.unsplash.com/photo-1461111522902-dd281dcb6ff4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kJTIwZnJhbWUlMjBwaG90b3xlbnwxfHx8fDE3NjEzOTI3MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    name: "Engraved Frames",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHx3b29kZW4lMjBwaG90byUyMGZyYW1lfGVufDB8fHx8fDEw&ixlib=rb-4.1.0&q=80&w=1080",
     gridClass: "col-span-3 sm:col-span-2 row-span-2",
   },
   {
     id: 2,
-    name: "Gift Boxes",
-    image: "https://images.unsplash.com/photo-1732532973406-0a82b447739c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBnaWZ0JTIwYm94fGVufDF8fHx8MTc2MTM5MjIyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    name: "Wooden Plaques",
+    image: "https://images.unsplash.com/photo-1606326608606-3bc2e3eb7ed2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBlbmdyYXZlZCUyMHBsYXF1ZXxlbnwwfHx8fHwxMA&ixlib=rb-4.1.0&q=80&w=1080",
     gridClass: "col-span-3 sm:col-span-1 row-span-1",
   },
   {
     id: 3,
-    name: "Miniatures",
-    image: "https://images.unsplash.com/photo-1681913616739-4236c46ff18b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBtaW5pYXR1cmV8ZW58MXx8fHwxNzYxMzkyNzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    name: "Wooden Nameplates",
+    image: "https://images.unsplash.com/photo-1616486701772-6db9a6b1a5c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBuYW1lcGxhdGV8ZW58MHx8fHx8MTA&ixlib=rb-4.1.0&q=80&w=1080",
     gridClass: "col-span-3 sm:col-span-1 row-span-1",
   },
   {
     id: 4,
-    name: "Custom Engravings",
-    image: "https://images.unsplash.com/photo-1667964395256-0a0fd2d833bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb25hbGl6ZWQlMjB3b29kZW4lMjBjcmFmdHxlbnwxfHx8fDE3NjEzOTI3MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    name: "Wooden Keychains",
+    image: "https://images.unsplash.com/photo-1495578942200-c50d3c9f5fe5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBrZXljaGFpbnxlbnwwfHx8fHwxMA&ixlib=rb-4.1.0&q=80&w=1080",
     gridClass: "col-span-3 sm:col-span-1 row-span-1",
   },
   {
     id: 5,
-    name: "Keychains",
-    image: "https://images.unsplash.com/photo-1744329630135-06bb9d5e02a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBrZXljaGFpbnxlbnwxfHx8fDE3NjEzMzk4NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    name: "Wooden Calendars",
+    image: "https://images.unsplash.com/photo-1581368484726-851b5f2a4a38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBjYWxlbmRhcnxlbnwwfHx8fHwxMA&ixlib=rb-4.1.0&q=80&w=1080",
+    gridClass: "col-span-3 sm:col-span-1 row-span-1",
+  },
+  {
+    id: 6,
+    name: "Wooden Photo Stands",
+    image: "https://images.unsplash.com/photo-1549187774-b4e9b0445b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHx3b29kZW4lMjBwaG90byUyMHN0YW5kfGVufDB8fHx8fDEw&ixlib=rb-4.1.0&q=80&w=1080",
     gridClass: "col-span-3 sm:col-span-2 row-span-1",
   },
 ];

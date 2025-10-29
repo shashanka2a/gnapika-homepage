@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Menu, ShoppingCart, User } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,22 +31,22 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <motion.div
+          <motion.a
+            href="/"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center"
+            aria-label="Gnapika Home"
           >
-            <h1
-              className="text-2xl sm:text-3xl"
-              style={{
-                fontFamily: '"DM Serif Display", serif',
-                color: isScrolled ? '#8B0000' : '#FFFFFF',
-                transition: 'color 0.3s ease',
-              }}
-            >
-              Gnapika
-            </h1>
-          </motion.div>
+            <ImageWithFallback
+              src="/Gnapika-logo.jpeg"
+              alt="Gnapika logo"
+              width={140}
+              height={40}
+              className="h-8 sm:h-10 w-auto"
+              priority
+            />
+          </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
